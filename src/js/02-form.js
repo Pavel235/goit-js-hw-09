@@ -12,10 +12,13 @@ document.addEventListener('DOMContentLoaded', () => {
     localStorage.setItem('feedback-form-state', JSON.stringify(currentState));
   });
 
-  
+  try {
   const storedState = JSON.parse(localStorage.getItem('feedback-form-state')) || {};
   feedbackForm.elements.email.value = storedState.email || '';
   feedbackForm.elements.message.value = storedState.message || '';
+} catch (e) {
+    console.error('LOCAL STORAGE PARSE ERROR');
+}
 
 
   feedbackForm.addEventListener('submit', (event) => {
@@ -28,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
     console.log(formValues);
 
-    
+
     localStorage.removeItem('feedback-form-state');
     feedbackForm.reset();
   });
