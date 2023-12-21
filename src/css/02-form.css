@@ -1,0 +1,88 @@
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 408px;  
+    padding: 24px; 
+}
+
+label {
+    font-family: 'Montserrat', sans-serif;
+    color: #2E2F42;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+}
+
+.input-email {
+    font-size: 16px;
+    padding: 8px 16px;
+    width: 360px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid #808080;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-email:hover {
+    border: 1px solid #463232;
+}
+
+.input-email::placeholder {
+    color: #2E2F42;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+}
+
+.message-input {
+    font-size: 16px;
+    padding: 8px 16px;
+    resize: none;
+    width: 360px;
+    height: 80px;
+    border-radius: 4px;
+    border: 1px solid #808080;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.message-input:hover {
+    border: 1px solid #463232;
+}
+
+.message-input::placeholder {
+    color: #2E2F42;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+}
+
+.form-btn {
+    border: transparent;
+    width: 95px;
+    height: 40px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    background-color: #4E75FF;
+    cursor: pointer;
+    color: #FFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-btn:hover {
+    background-color: #6C8CFF;
+}
+
