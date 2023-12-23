@@ -84,7 +84,6 @@ const images = [
           <img 
             class="gallery-image"
             src="${preview}"
-            data-source="${original}"
             alt="${description}" /> 
         </a>
       </li>`;
@@ -92,7 +91,7 @@ const images = [
     .join("");
   };
 
-  var lightbox = new SimpleLightbox ('.gallery a', {
+  const lightbox = new SimpleLightbox ('.gallery a', {
     captionsData: 'alt',
     captionDelay: 250, 
     captionPosition: 'bottom',
